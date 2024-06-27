@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { LogoHeading } from "@/components/ui/logo-heading";
 
 const HomePage = () => {
-	return (
-		<div>
-			<Button>Просто кнопка</Button>
-		</div>
-	);
+  return (
+    <div className="flex w-full flex-col items-center justify-center">
+      <LogoHeading />
+    </div>
+  );
 };
 
 export default HomePage;
