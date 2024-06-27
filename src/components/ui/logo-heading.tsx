@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 
-const interFont = Inter({
+const robotoFont = Roboto({
   subsets: ["cyrillic"],
   weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-sans",
@@ -9,13 +9,15 @@ const interFont = Inter({
 export const LogoHeading = () => {
   return (
     <div className="flex select-none flex-col items-end">
-      <h6 className="text-base font-medium leading-none opacity-25">v1.0</h6>
-      <h1
+      <h6
         className={cn(
-          "leading-2 flex items-center font-sans text-3xl",
-          interFont.variable,
+          "font-sans text-base font-medium leading-none opacity-25",
+          robotoFont.variable,
         )}
       >
+        v1.0
+      </h6>
+      <h1 className="leading-2 flex items-center font-sans text-3xl">
         <span className="font-medium first-letter:font-semibold">Dataset</span>
         &nbsp;
         <span className="first-letter:font-semibold">Analyzer</span>
