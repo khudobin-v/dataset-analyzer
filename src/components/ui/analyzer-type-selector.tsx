@@ -5,7 +5,7 @@ import { useState } from "react";
 import { AnalyzerTypeButton } from "./analyzer-type-button";
 
 export const AnalyzerTypeSelector = () => {
-  const [selectedType, setSelectedType] = useState<string | null>(null);
+  const [selectedType, setSelectedType] = useState<string>("Детекция");
   return (
     <div className="flex items-center gap-2">
       <AnalyzerTypeButton

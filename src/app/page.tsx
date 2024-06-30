@@ -6,13 +6,19 @@ import { WandSparklesIcon } from "lucide-react";
 
 const HomePage = () => {
   return (
-    <div className="flex w-full flex-col items-center justify-center">
-      <LogoHeading />
-      <AnalyzerTypeSelector />
-      <FileInput />
-      <Button Icon={WandSparklesIcon} color="green">
-        Проанализировать
-      </Button>
+    <div className="mt-10 flex flex-col items-center justify-center">
+      <div className="flex w-1/2 flex-col items-center gap-5">
+        <LogoHeading />
+        <div className="flex w-full flex-col items-start gap-3">
+          <AnalyzerTypeSelector />
+          <div className="flex w-full flex-col items-end gap-3">
+            <FileInput />
+            <Button Icon={WandSparklesIcon} color="green">
+              Проанализировать
+            </Button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
