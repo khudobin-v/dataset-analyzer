@@ -18,7 +18,7 @@ export const AnalyzerTypeButton = ({
     <div
       onClick={onClick}
       className={cn(
-        "flex cursor-pointer items-center justify-center gap-2 rounded-md border-[1.5px] p-3 px-2.5 transition-colors hover:border-black/10 hover:bg-black/5 hover:shadow-sm",
+        "flex cursor-pointer items-center justify-center gap-2 rounded-md border-[1.5px] px-2.5 py-3 transition-colors hover:border-black/10 hover:bg-black/5 hover:shadow-sm",
         { "border-green-600 bg-black/5 hover:border-green-500": selected },
       )}
     >
