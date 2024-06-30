@@ -12,10 +12,10 @@ export const Button = ({ Icon, color, children }: ButtonProps) => {
   return (
     <button
       className={cn(
-        "flex items-center gap-3 rounded-md bg-black/80 p-2 font-medium text-white",
-        { "bg-red-500": color === "red" },
-        { "bg-green-600": color === "green" },
-        { "bg-blue-500": color === "blue" },
+        "flex items-center gap-3 rounded-md bg-black/80 p-2 px-3 font-medium text-white transition-colors hover:opacity-90",
+        { "bg-red-color": color === "red" },
+        { "bg-green-color": color === "green" },
+        { "bg-blue-color": color === "blue" },
       )}
     >
       <span className={cn({ "visible block": Icon })}>
