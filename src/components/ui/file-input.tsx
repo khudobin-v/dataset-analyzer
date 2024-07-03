@@ -26,7 +26,7 @@ export const FileInput = () => {
         className="flex w-full cursor-pointer items-center gap-2.5 rounded-md border-[1.5px] border-gray-300 px-2.5 py-3 outline-none transition-colors hover:border-black/10 hover:bg-black/5"
       >
         <FolderIcon size={18} className="opacity-60" />
-        <span className="flex w-full justify-between text-sm font-medium text-black/60">
+        <span className="flex w-full select-none justify-between text-sm font-medium text-black/60">
           {fileName ? fileName : "Выберите путь до папки с датасетом"}
           <span>
             {fileName && <XIcon size={20} onClick={handleClearFile} />}
