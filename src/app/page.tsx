@@ -2,6 +2,7 @@ import { AnalyzerTypeSelector } from "@/components/ui/analyzer-type-selector";
 import { Button } from "@/components/ui/button";
 import { FileInput } from "@/components/ui/file-input";
 import { LogoHeading } from "@/components/ui/logo-heading";
+import { Message } from "@/components/ui/message";
 import { WandSparklesIcon } from "lucide-react";
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
               Проанализировать
             </Button>
           </div>
+          <Message />
         </div>
       </div>
     </div>
